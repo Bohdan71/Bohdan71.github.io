@@ -41,6 +41,8 @@
         text-decoration: none
         &:hover
             color: white
+    &__hamburger
+        display: none
     &__contacts
         min-width: 25%
         margin: auto
@@ -55,3 +57,32 @@
             margin-left: 20px
         &__contacts
             margin-right: 20px
+
+@media (max-width: 789px)
+    .header
+        &__official
+            display: none
+        &__logo
+            margin-left: 35px
+        &__text
+            font-size: 20px
+        &__contacts
+            margin-right: 65px
+
+@media (max-width: 495px)
+    .header
+        &__text
+            font-size: 17px
+            span
+                font-size: 8px
+        &__phone
+            font-size: 15px
+        button
+            width: 142px
+
+@media( max-width: 420px)
+    .header 
+        display: none
+        
+
+    
